@@ -1,0 +1,58 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #343a40;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавление тени для глубины */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Плавные переходы */
+}
+
+.header:hover {
+  background-color: #495057; /* Изменение фона при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Увеличение тени при наведении */
+  transform: translateY(-2px); /* Легкое поднятие при наведении */
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.header .logo:hover {
+  color: #f8f9fa; /* Светлый цвет для логотипа при наведении */
+}
+
+.header .menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.header .menu-icon div {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  transition: transform 0.3s ease; /* Плавный переход для изменения */
+}
+
+.header .menu-icon:hover div {
+  transform: scale(1.1); /* Легкое увеличение полосок меню при наведении */
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .header {
+    padding: 15px 20px;
+  }
+}

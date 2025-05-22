@@ -1,0 +1,42 @@
+.footer {
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  width: 100%; /* Использование 100% ширины для охвата всей страницы */
+  position: fixed; /* Закрепление внизу страницы */
+  bottom: 0;
+  left: 0;
+  z-index: 1000; /* Обеспечивает, что footer будет поверх других элементов */
+  text-align: center; /* Центрирование текста */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, padding 0.3s ease; /* Плавные переходы */
+}
+
+.footer:hover {
+  background-color: #495057; /* Изменение фона при наведении */
+  padding: 25px; /* Увеличение отступов при наведении */
+}
+
+.footer p {
+  margin: 0; /* Убирает лишние отступы */
+  line-height: 1.6; /* Улучшает читаемость */
+  color: #e0e0e0; /* Мягкий оттенок белого для текста */
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none; /* Убирает подчеркивание */
+  transition: color 0.3s ease; /* Плавный переход для ссылок */
+}
+
+.footer a:hover {
+  color: #f8f9fa; /* Освежающий цвет для ссылок при наведении */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 14px; /* Уменьшение размера шрифта на мобильных устройствах */
+  }
+}

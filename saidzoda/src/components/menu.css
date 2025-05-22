@@ -1,0 +1,37 @@
+.menu {
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    background-color: #343a40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background-color: #495057;
+  }
+  .menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: transform 0.3s ease; /* Плавный переход для иконки */
+  }
+  
+  .menu-icon div {
+    width: 30px; /* Немного увеличено для лучшей видимости */
+    height: 4px; /* Немного увеличено для лучшего визуального восприятия */
+    background-color: white;
+    border-radius: 2px; /* Округленные углы для иконки */
+  }
+  
+  .menu-icon:hover {
+    transform: scale(1.1); /* Увеличение иконки при наведении */
+  }
